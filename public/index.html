@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <div class=" grid grid-cols-3 px-16 w-screen h-20 mt-4 items-center">
+            <img src="static/airbnb-logo.png" alt="" class="h-16 w-28">
+            <div class="flex justify-evenly items-center h-12 w-96 gap-4">
+                <button class="tracking-wide text-black text-sm">Konaklama Yerleri</button>
+                <button class="tracking-wide text-gray-500 text-sm font-medium px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Deneyimler</button>
+                <button class="tracking-wide text-gray-500 ont-medium text-sm px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Çevrimiçi Deneyimler</button>
+            </div>
+
+            <div class="flex justify-end gap-8 items-center">
+                <button class="tracking-wide px-2 py-2 text-sm font-medium hover:rounded-full hover:bg-gray-100 text-black">Evinizi Airbnb'ye taşıyın</button>
+                <button>
+                    <span class="material-symbols-outlined hover:rounded-full px-1 py-1  hover:bg-gray-100">
+                        language
+                        </span>
+                </button>
+                <button class="flex justify-evenly items-center gap-2 rounded-full border  h-14 w-24 hover:shadow-lg  ">
+                    <i class="fa-solid fa-bars" style="color: #6b7281;"></i>
+                    <i class="fa-solid fa-user bg-gray-500 rounded-full p-2" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </div>
+            <div class="mt-4 flex justify-center items-center h-14 w-auto border rounded-full shadow-md border-b-[1px]" >
+                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Yer
+                    <span class="flex text-xs text-gray-500">Gidilecek yerleri arayın</span>
+                </button>
+                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Giriş
+                    <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
+                </button>
+                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Çıkış
+                    <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
+                </button>
+                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Kişiler
+                    <span class="flex text-xs text-gray-500">Misafir ekleyin</span>
+                </button>
+                <i class="fa-solid fa-magnifying-glass bg-[#FF5A5F] rounded-full p-2" style="color: #ffffff;"></i>
+            </div>
+        
+
+        <!-- categorybar -->
+        <div class="flex items-center h-24 space-x-5 pl-10">
+            <div class="flex items-center justify-between space-x-10">
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img1.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Güzel Manzaralar</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img2.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Küçük Evler</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img3.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Üçgen Evler</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img4.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Kamp</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img5.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Kubbeler</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img6.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Malikaneler</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img7.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Muhteşem Havuzlar</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img8.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Tekneler</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img9.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Şatoar</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img10.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Odalar</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img11.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Oda-kahvaltı</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img12.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Denize Sıfır</p>
+                    <p></p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="static/img13.jpg" alt="" class="h-6 w-6 text-gray-500">
+                    <p class="text-xs font-normal">Simgesel Kentler</p>
+                    <p></p>
+                </div>
+
+
+                <span class="material-symbols-outlined">
+                    arrow_circle_right
+                </span>
+
+
+                <div class="px-2 py-2 flex justify-between rounded-lg border">
+                    <span class=" flex justify-start material-symbols-outlined">
+                        tune  
+                        </span>
+                        <p class="pl-2">filtreler</p>
+                </div>
+
+                <div class="px-2 py-2 flex justify-between rounded-lg border">
+                    <p>vergiler hariç toplamı göster</p>
+                    <span class=" flex justify-start material-symbols-outlined">
+                        toggle_off
+                        </span>
+                       
+                </div>
+            </div>
+
+        </div>
+
+        <!-- pricebar -->
+    </header>
+        <!-- hotel -->
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
