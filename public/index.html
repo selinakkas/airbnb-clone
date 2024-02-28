@@ -10,147 +10,888 @@
 </head>
 <body>
     <header>
-        <!-- navbar -->
-        <div class=" grid grid-cols-3 px-16 w-screen h-20 mt-4 items-center">
-            <img src="static/airbnb-logo.png" alt="" class="h-16 w-28">
-            <div class="flex justify-evenly items-center h-12 w-96 gap-4">
-                <button class="tracking-wide text-black text-sm">Konaklama Yerleri</button>
-                <button class="tracking-wide text-gray-500 text-sm font-medium px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Deneyimler</button>
-                <button class="tracking-wide text-gray-500 ont-medium text-sm px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Çevrimiçi Deneyimler</button>
-            </div>
+            <!-- navbar -->
+            <div class=" grid grid-cols-3 px-16 w-screen h-20 mt-4 items-center">
+                <img src="static/airbnb-logo.png" alt="" class="h-16 w-28">
+                <div class="flex justify-evenly items-center h-12 gap-4">
+                    <button class="tracking-wide text-black text-sm font-medium">Konaklama Yerleri</button>
+                    <button class="tracking-wide text-gray-500 text-sm font-medium px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Deneyimler</button>
+                    <button class="tracking-wide text-gray-500 font-medium text-sm px-2 py-2 hover:rounded-full hover:bg-gray-100 hover:text-black">Çevrimiçi Deneyimler</button>
+                </div>
 
-            <div class="flex justify-end gap-8 items-center">
-                <button class="tracking-wide px-2 py-2 text-sm font-medium hover:rounded-full hover:bg-gray-100 text-black">Evinizi Airbnb'ye taşıyın</button>
-                <button>
-                    <span class="material-symbols-outlined hover:rounded-full px-1 py-1  hover:bg-gray-100">
-                        language
+                <div class="flex justify-end gap-8 items-center">
+                    <button class="tracking-wide px-2 py-2 text-sm font-medium hover:rounded-full hover:bg-gray-100 text-black">Evinizi Airbnb'ye taşıyın</button>
+                    <button>
+                        <span class="material-symbols-outlined hover:rounded-full px-1 py-1  hover:bg-gray-100">
+                            language
+                            </span>
+                    </button>
+                    <button class="flex justify-evenly items-center gap-2 rounded-full border  h-14 w-24 hover:shadow-lg  ">
+                        <i class="fa-solid fa-bars" style="color: #6b7281;"></i>
+                        <i class="fa-solid fa-user bg-gray-500 rounded-full p-2" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+                <div class="mt-4 flex mx-auto items-center justify-center h-14 w-1/2 border rounded-full shadow-md border-b-[1px]" >
+                    <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Yer
+                        <span class="flex text-xs text-gray-500">Gidilecek yerleri arayın</span>
+                    </button>
+                    <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Giriş
+                        <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
+                    </button>
+                    <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Çıkış
+                        <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
+                    </button>
+                    <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Kişiler
+                        <span class="flex text-xs text-gray-500">Misafir ekleyin</span>
+                    </button>
+                    <button class="flex justify-end ">
+                        <i class="fa-solid fa-magnifying-glass bg-[#FF5A5F] rounded-full p-2" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+                    
+            
+
+            <!-- categorybar -->
+            <div class="flex items-center h-24 space-x-5 pl-10">
+                <div class="flex items-center justify-between space-x-10">
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 border-b-2 border-black">
+                        <img src="static/img1.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Güzel Manzaralar</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img2.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Küçük Evler</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img3.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Üçgen Evler</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img4.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Kamp</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img5.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Kubbeler</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img6.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Malikaneler</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img7.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Muhteşem Havuzlar</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img8.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Tekneler</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img9.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Şatoar</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img10.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Odalar</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img11.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Oda-kahvaltı</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img12.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Denize Sıfır</p>
+                        <p></p>
+                    </div>
+                    <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 hover:border-b-2">
+                        <img src="static/img13.jpg" alt="" class="h-6 w-6 text-gray-500">
+                        <p class="text-xs font-normal">Simgesel Kentler</p>
+                        <p></p>
+                    </div>
+
+
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+
+
+                    <div class="px-2 py-3 flex justify-between rounded-lg border">
+                        <span class=" flex justify-start material-symbols-outlined">
+                            tune  
+                            </span>
+                            <p class="pl-2">filtreler</p>
+                    </div>
+
+                    <div class="px-3 py-3 flex justify-between rounded-lg border">
+                        <p>vergiler hariç toplamı göster</p>
+                        <span class=" flex justify-start material-symbols-outlined">
+                            toggle_off
                         </span>
-                </button>
-                <button class="flex justify-evenly items-center gap-2 rounded-full border  h-14 w-24 hover:shadow-lg  ">
-                    <i class="fa-solid fa-bars" style="color: #6b7281;"></i>
-                    <i class="fa-solid fa-user bg-gray-500 rounded-full p-2" style="color: #ffffff;"></i>
-                </button>
-            </div>
-        </div>
-            <div class="mt-4 flex justify-center items-center h-14 w-auto border rounded-full shadow-md border-b-[1px]" >
-                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Yer
-                    <span class="flex text-xs text-gray-500">Gidilecek yerleri arayın</span>
-                </button>
-                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Giriş
-                    <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
-                </button>
-                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Çıkış
-                    <span class="flex text-xs text-gray-500">Tarih ekleyin</span>
-                </button>
-                <button class="text-sm hover:rounded-full hover:bg-gray-100 text-black border-r-2 px-4">Kişiler
-                    <span class="flex text-xs text-gray-500">Misafir ekleyin</span>
-                </button>
-                <i class="fa-solid fa-magnifying-glass bg-[#FF5A5F] rounded-full p-2" style="color: #ffffff;"></i>
-            </div>
-        
-
-        <!-- categorybar -->
-        <div class="flex items-center h-24 space-x-5 pl-10">
-            <div class="flex items-center justify-between space-x-10">
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img1.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Güzel Manzaralar</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img2.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Küçük Evler</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img3.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Üçgen Evler</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img4.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Kamp</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img5.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Kubbeler</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img6.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Malikaneler</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img7.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Muhteşem Havuzlar</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img8.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Tekneler</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img9.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Şatoar</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img10.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Odalar</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img11.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Oda-kahvaltı</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img12.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Denize Sıfır</p>
-                    <p></p>
-                </div>
-                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
-                    <img src="static/img13.jpg" alt="" class="h-6 w-6 text-gray-500">
-                    <p class="text-xs font-normal">Simgesel Kentler</p>
-                    <p></p>
-                </div>
-
-
-                <span class="material-symbols-outlined">
-                    arrow_circle_right
-                </span>
-
-
-                <div class="px-2 py-2 flex justify-between rounded-lg border">
-                    <span class=" flex justify-start material-symbols-outlined">
-                        tune  
-                        </span>
-                        <p class="pl-2">filtreler</p>
-                </div>
-
-                <div class="px-2 py-2 flex justify-between rounded-lg border">
-                    <p>vergiler hariç toplamı göster</p>
-                    <span class=" flex justify-start material-symbols-outlined">
-                        toggle_off
-                        </span>
-                       
+                        
+                    </div>
                 </div>
             </div>
-
-        </div>
-
-        <!-- pricebar -->
+    
     </header>
         <!-- hotel -->
-    <main>
+    <main class="pt-62 mx-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6">
+            <div class="flex flex-col h-96 w-72">
+                <div class="relative">
+                    <img src="static/img1.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">116 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">10-15 Mar</p>
+                <p><span class="font-semibold">3.625 ₺</span> gece</p>
 
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <div class="relative">
+                    <img src="static/img2.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">117 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">4-9 Mar</p>
+                <p><span class="font-semibold">5.964 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img3.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.1</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">115 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">3625 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img4.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">112 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">28 Nis- 3 May</p>
+                <p><span class="font-semibold">3.218 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img5.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">113 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">5-10 Mar</p>
+                <p><span class="font-semibold">8.186 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img6.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Şile, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,91</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">60 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Nis</p>
+                <p><span class="font-semibold">2.982 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img7.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">118 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">9-14 Mar</p>
+                <p><span class="font-semibold">6.315 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img8.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,7</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">108 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">9.940 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img9.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Nilüfer, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.6</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">83 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">3.520 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img10.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,96</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">113 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">3.508 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img11.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">109 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">10-15 Mar</p>
+                <p><span class="font-semibold">4.912 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img12.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Şile, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,94</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">74 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">1.696 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img13.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,87</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">115 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">2.128 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img14.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Şile, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,92</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">63 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">4.210 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img15.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,95</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">116 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">17-22 Mar</p>
+                <p><span class="font-semibold">7.250 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img16.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,91</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">115 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">9-14 Mar</p>
+                <p><span class="font-semibold">5.379 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img17.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kartepe, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">109 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">24-29 Mar</p>
+                <p><span class="font-semibold">7.128 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img18.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kartepe, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">104 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">7-12 Mar</p>
+                <p><span class="font-semibold">3.999 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img19.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,97</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">113 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">14-19 Mar</p>
+                <p><span class="font-semibold">5.262 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img20.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sakarya, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">118 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">13-18 Mar</p>
+                <p><span class="font-semibold">4.841 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img21.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">İznik, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,98</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">88 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">4.678 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img22.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Gölcük, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,97</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">82 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">10-15 Mar</p>
+                <p><span class="font-semibold">4.093 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img23.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,9</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">118 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">4.130 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img24.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,95</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">117 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">5.496 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img25.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,8</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">118 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">3.642 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img26.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,92</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">114 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">5.683 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img27.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,96</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">113 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">4-9 Mar</p>
+                <p><span class="font-semibold">5.517 ₺</span> gece</p>
+
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img28.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,7</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">116 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">4-9 Mar</p>
+                <p><span class="font-semibold">3.508 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img29.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,91</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">118 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">11-16 Mar</p>
+                <p><span class="font-semibold">5.005 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img30.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,85</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">114 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">11-16 Mar</p>
+                <p><span class="font-semibold">6.198 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img31.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kartepe, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,86</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">105 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">7.250 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img32.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,84</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">115 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">5.173 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img33.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,95</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">119 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">3-8 Mar</p>
+                <p><span class="font-semibold">3.943 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img34.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">116 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">5.272 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img35.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kartepe, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5,0</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">107 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">3.937 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img36.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">İznik, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,97</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">88 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">1-6 Mar</p>
+                <p><span class="font-semibold">4.678 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img37.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,92</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">115 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">3.789 ₺</span> gece</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                 <div class="relative">
+                    <img src="static/img38.webp" class="w-72 h-64 rounded-xl shadow-md">
+                    <i class="fa-solid fa-heart absolute top-0 right-0 mt-4 mr-4 text-white translate-y-0.5 hover:scale-110  duration-1000  text-2xl"></i>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Sapanca, Türkiye</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4,8</p>
+                        </div>
+                </div>
+                <p class="text-sm text-gray-500">113 kilometre uzakta</p>
+                <p class="text-sm text-gray-500">6-11 Mar</p>
+                <p><span class="font-semibold">5.847 ₺</span> gece</p>
+
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer class="bg-gray-50">
+        <div class="mt-8 mx-10">
+            <div class="p-6">
+                <h1 class="font-bold text-2xl p-4">Gelecek kaçamaklarınız için fikirler</h1>
+                <div class="flex items-center justify-start space-x-10 mb-4">
+                    <a href="#" class="text-black font-bold">Popüler</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Sanat ve Kültür</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Açık Hava</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Dağlar</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Sahil</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Kategoriler</a>
+                    <a href="#" class="text-gray-500 hover:text-black hover:font-bold">Yapılacak şeyler</a>
+                </div>
+                <hr>
+                <div class="grid grid-cols-6 gap-4 mt-4 mb-4">
+                    <a href="#" class="font-semibold">Canmore
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Benalmádena
+                        <span class="flex text-gray-500">Kiralık daireler</span>
+                    </a>
+                    <a href="#" class="font-semibold">Marbella
+                        <span class="flex text-gray-500">Kiralık sahil evleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Mijas
+                        <span class="flex text-gray-500">Kiralık evler</span>
+                    </a>
+                    <a href="#" class="font-semibold">Prescott
+                        <span class="flex text-gray-500">Kiralık kır evleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Scottsdale
+                        <span class="flex text-gray-500">Kiralık malikaneler</span>
+                    </a>
+                    <a href="#" class="font-semibold">Tucson
+                        <span class="flex text-gray-500">Havuzlu kiralık yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Jasper
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Mountain View
+                        <span class="flex text-gray-500">Kiralık evler</span>
+                    </a>
+                    <a href="#" class="font-semibold">Devonport
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Mallacoota
+                        <span class="flex text-gray-500">Kiralık sahil evleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">İbiza
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Anaheim
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Monterey
+                        <span class="flex text-gray-500">Kiralık site içi konutlar</span>
+                    </a>
+                    <a href="#" class="font-semibold">Paso Robles
+                        <span class="flex text-gray-500">Kiralık tatil yerleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">Santa Barbara
+                        <span class="flex text-gray-500">Kiralık evler</span>
+                    </a>
+                    <a href="#" class="font-semibold">Sonoma
+                        <span class="flex text-gray-500">Kiralık kır evleri</span>
+                    </a>
+                    <a href="#" class="font-semibold">daha fazlasını göster
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="grid grid-cols-3 mb-4">
+                <div class="flex flex-col space-y-4 items-center">
+                    <p class="font-bold">Destek</p>
+                    <a href="#" class="text-gray-500 hover:underline">Evinizi Airbnb'ye taşıyın</a>
+                    <a href="#" class="text-gray-500 hover:underline">Ev sahipleri için AirCover</a>
+                    <a href="#" class="text-gray-500 hover:underline">Ev sahipliği kaynakları</a>
+                    <a href="#" class="text-gray-500 hover:underline">Topluluk forumu</a>
+                    <a href="#" class="text-gray-500 hover:underline">Sorumlu ev sahibi</a>
+                    <a href="#" class="text-gray-500 hover:underline">Ücretsiz bir şekilde ev sahipliği dersine katılın</a>
+                </div>
+                <div class="flex flex-col space-y-4 items-center">
+                    <p class="font-bold">Ev sahipliği</p>
+                    <a href="#" class="text-gray-500 hover:underline">Yardım Merkezi</a>
+                    <a href="#" class="text-gray-500 hover:underline">AirCover</a>
+                    <a href="#" class="text-gray-500 hover:underline">Ayrımcılık yapmama</a>
+                    <a href="#" class="text-gray-500 hover:underline">Engellilik desteği</a>
+                    <a href="#" class="text-gray-500 hover:underline">İptal Seçenekleri</a>
+                    <a href="#" class="text-gray-500 hover:underline">Semtinizdeki sorunu bildirin</a>
+                </div>
+                <div class="flex flex-col space-y-4 items-center">
+                    <p class="font-bold">Airbnb</p>
+                    <a href="#" class="text-gray-500 hover:underline durat">Basın odası</a>
+                    <a href="#" class="text-gray-500 hover:underline">Yeni özellikler</a>
+                    <a href="#" class="text-gray-500 hover:underline">Kariyer</a>
+                    <a href="#" class="text-gray-500 hover:underline">Yatırımcılar</a>
+                    <a href="#" class="text-gray-500 hover:underline">Airbnb.org acil konaklamaları</a>
+                </div>
+            </div>
+            <hr>
+            <div class="grid grid-cols-2 mt-4">
+                <div class="flex justify-start gap-4">
+                    <button>© 2024 Airbnb, Inc.</button>
+                    <button>Gizlilik</button>
+                    <button>Şartlar</button>
+                    <button>Site haritası</button>
+                </div>
+                <div class="flex justify-end space-x-2">
 
+                    <i class="fa-solid fa-globe px-2 py-2"></i>
+                    <p>Türkçe (TR)</p>
+                    <i class="fa-solid fa-turkish-lira-sign px-2 py-2"></i>
+                    <p>TRY</p>
+                    <i class="fa-brands fa-square-facebook px-2 py-2"></i>
+                    <i class="fa-brands fa-square-twitter px-2 py-2"></i>
+                    <i class="fa-brands fa-square-instagram px-2 py-2"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
